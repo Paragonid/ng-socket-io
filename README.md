@@ -1,7 +1,7 @@
 # ng-socket-io
-[![Build Status](https://travis-ci.org/bougarfaoui/ng-socket-io.svg?branch=master)](https://travis-ci.org/bougarfaoui/ng-socket-io)
-[![npm version](https://badge.fury.io/js/ng-socket-io.svg)](https://www.npmjs.com/package/ng-socket-io)
-[![npm downloads](https://img.shields.io/badge/Downloads-4000%2Fmonth-brightgreen.svg)](https://github.com/bougarfaoui/ng-socket-io)
+[![Build Status](https://travis-ci.org/bougarfaoui/ng2-socket-io.svg?branch=master)](https://travis-ci.org/bougarfaoui/ng2-socket-io)
+[![npm version](https://badge.fury.io/js/ng2-socket-io.svg)](https://badge.fury.io/js/ng-socket-io)
+[![npm downloads](https://img.shields.io/badge/Downloads-400%2Fmonth-brightgreen.svg)](https://github.com/bougarfaoui/ng2-socket-io)
 
 [Socket.IO](http://socket.io/) module for Angular 2 and 4
 
@@ -130,10 +130,6 @@ Works the same as in Socket.IO.
 
 ### `socket.fromEvent<T>(eventName: string): Observable<T>`
 Takes an event name and returns an Observable that you can subscribe to.
-
-### socket.fromEventOnce<T>(eventName: string): Promise<T>
-Takes an event name, and returns a Promise instead of an Observable. 
-Works the same as `once` in Socket.IO.
 
 You should keep a reference to the Observable subscription and unsubscribe when you're done with it.
 This prevents memory leaks as the event listener attached will be removed (using ```socket.removeListener```) ONLY and when/if you unsubscribe.

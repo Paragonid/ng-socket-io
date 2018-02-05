@@ -3,7 +3,7 @@ require("es6-shim");
 
 var enableDestroy = require('server-destroy');
 var http = require('http');
-var IOSocket = require("../socket-io.service.js").WrappedSocket;
+var IOSocket = require("../dist/src/socket-io.service.js").WrappedSocket;
 var server, io;
 
 beforeEach(function(){
