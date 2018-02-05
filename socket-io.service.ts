@@ -5,15 +5,16 @@ import 'rxjs/add/operator/share';
 import * as io from 'socket.io-client';
 
 import { SocketIoConfig } from './socketIoConfig';
-import { SOCKET_CONFIG_TOKEN } from './socket-io.module';
 
 export class WrappedSocket {
     subscribersCounter = 0;
     ioSocket: any;
 
-    constructor(@Inject(SOCKET_CONFIG_TOKEN) config: SocketIoConfig) {
-        const url: string = config.url || '';
-        const options: any = config.options || {};
+    constructor() {}
+
+    create(config: SocketIoConfig) {
+        const url = config.url || '';
+        const options = config.options || {};
         this.ioSocket = io(url, options);
     }
 
@@ -58,7 +59,7 @@ export class WrappedSocket {
             };
         }).share();
     }
-   
+
     /* Creates a Promise for a one-time event */
     fromEventOnce<T>(eventName: string): Promise<T> {
         return new Promise<T>(resolve => this.once(eventName, resolve));
