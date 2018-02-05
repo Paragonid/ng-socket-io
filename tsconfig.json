@@ -16,5 +16,8 @@
     },
     "files": [
         "./index.ts"
+    ],
+    "include": [
+        "./index.ts"
     ]
 }
