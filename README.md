@@ -1,7 +1,10 @@
+# NOT ORIGINAL REPOSITORY
+
+I have modified ng-socket-io to fit my requirements to set io(options) dynamically.
+
+Please refer to original repository instead.
+
 # ng-socket-io
-[![Build Status](https://travis-ci.org/bougarfaoui/ng2-socket-io.svg?branch=master)](https://travis-ci.org/bougarfaoui/ng2-socket-io)
-[![npm version](https://badge.fury.io/js/ng2-socket-io.svg)](https://badge.fury.io/js/ng-socket-io)
-[![npm downloads](https://img.shields.io/badge/Downloads-400%2Fmonth-brightgreen.svg)](https://github.com/bougarfaoui/ng2-socket-io)
 
 [Socket.IO](http://socket.io/) module for Angular 2 and 4
 

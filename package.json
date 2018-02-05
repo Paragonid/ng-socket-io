@@ -75,7 +75,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
-  "name": "ng-socket-io",
+  "name": "ng-socket-io-create",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bougarfaoui/ng-socket-io.git"
